@@ -1,7 +1,7 @@
 .about_container{
   margin-left: 1rem;
-  height: 90%;
-  margin-top: 3rem;
+  height: 100%;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -13,13 +13,15 @@ margin-top: 20vw;
 .about_link{
   margin-top: 2.5rem;
   h3{
-    margin-bottom: 2rem;
+    margin-bottom: 0;
   }
 
 .titleproject{
-font-size: 7vw;
+    font-size: 30px;
+    color: #1F487E;
   }
 }
+
 .donate_btn{
   width: 135px;
   height: 50px;
@@ -45,9 +47,16 @@ font-size: 7vw;
 }
 
 .textproject{
-  padding:30px;
+  padding: 30px 30px 0px 30px;
   font-size: 5vw;
 }
+
+.textproject2{
+  padding: 30px 30px 0px 30px;
+  font-size: 5vw;
+  margin-bottom: 20px;
+}
+
 .for-dev{
   margin-top: 20vw;
   text-decoration: none;
@@ -57,16 +66,16 @@ font-size: 7vw;
   font-size: 30vw;
 }
 
-// .card-product {
-//   overflow: hidden;
-//   height: 30vw;
-//   background: #f0fcee;
-//   box-shadow: 2px 6px 6px #6f6f6f;
-//   display: flex;
-//   align-items: center;
-//   margin: 8vw;
-//   border-radius: 50px 0 50px 0;
-// }
+.card-product {
+  overflow: hidden;
+  height: 30vw;
+  background: #f0fcee;
+  box-shadow: 2px 6px 6px #6f6f6f;
+  display: flex;
+  align-items: center;
+  margin: 8vw;
+  border-radius: 50px 0 50px 0;
+}
 
 #bntabout{
   margin-top: -1vh;
