@@ -5,7 +5,7 @@
   >
   <div class="results-card x-center">
     <div>
-      <h1><%= @chatroom.name %></h1>
+      <h1><strong><%= @chatroom.name %></strong></h1>
     </div>
     <div class="messages" data-chatroom-subscription-target="messages">
       <% @chatroom.messages.each do |message| %>
@@ -19,9 +19,16 @@
       <%= render "messages/messagesform", message: @message %>
   </div>
 </div>
+
+<div class="container">
+  <%= link_to "Back to Community", search_path, class: "btn btn-gradient" %>
+</div>
+
+<!--
 <div class="container">
   <div class="button-container">
     <a class="mask" href="search"><strong>Back to Community</strong></a>
     <%= link_to ' <button type="button" name="Hover" >Back to Community</button>'.html_safe, search_path %>
   </div>
 </div>
+-->
