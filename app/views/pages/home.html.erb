@@ -1,4 +1,3 @@
-
 <div class="container">
   <p class="home-header">less<span style="color: #6D9DC5;">is</span>more</p>
   <p class="home-co2">is a Co2</p>
@@ -7,7 +6,7 @@
   <h4><span data-controller="typed" id="typed"></span></h4>
 </div>
 
-<div class="mb-5">
+<div class="container arrow-wrapper d-flex">
   <div class="container arrow d-flex">
     <div class="chevron"></div>
     <div class="chevron"></div>
@@ -19,15 +18,15 @@
   <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287545/LessIsMore_ai/survey_ydvkda.jpg" />
   <div class="card-product-infos">
     <h2>1. Take the Quiz</h2>
-    <p> Profile your lifestyle by answering some questions </p>
+    <p> Profile your impact by answering a few questions </p>
   </div>
 </div>
 
 <div class="card-product">
   <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287364/LessIsMore_ai/results_elshdv.jpg" />
   <div class="card-product-infos">
-    <h2>2. Get your results </h2>
-    <p>Understand the Co2 footprint of your lifestyle</p>
+    <h2>2. See Your Results </h2>
+    <p>Learn about your current carbon footprint</p>
   </div>
 </div>
 
@@ -35,8 +34,8 @@
 <div class="card-product">
   <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294546/LessIsMore_ai/ideas_pxf0wm.png" />
   <div class="card-product-infos">
-    <h2>3. Discover ideas</h2>
-    <p>Explore custom ideas to reduce your Co2 impact</p>
+    <h2>3. Get Inspired</h2>
+    <p>Explore actions you can take to reduce your Co2</p>
   </div>
 </div>
 
@@ -44,15 +43,21 @@
 <div class="card-product">
   <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294643/LessIsMore_ai/community_rzsnzt.png" />
   <div class="card-product-infos">
-    <h2>4. Build a Community</h2>
-    <p>Share and discuss ideas with your community</p>
+    <h2>4. Join With Friends</h2>
+    <p>Build a community and share your ideas together</p>
 
   </div>
 </div>
 
 <div class="container">
+
+  <%= link_to "Take the Quiz!", survey_path(refresh: true), class: "btn btn-gradient" %>
+
+  <!--
   <div class="button-container">
     <a class="mask" style="font-weigth-bold" href="survey"><strong>Take the Quiz!</strong></a>
     <%= link_to ' <button type="button" name="Hover" >Take the Quiz!</button>'.html_safe, survey_path(refresh: true) %>
   </div>
+  -->
+
 </div>
