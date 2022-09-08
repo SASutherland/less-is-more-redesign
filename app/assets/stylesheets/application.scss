@@ -26,15 +26,15 @@
 
 
 body {
-  background: rgb(221,255,195);
-  background: linear-gradient(to bottom, rgb(182, 244, 146), rgb(51, 139, 147));;
-  font-family: 'Comfortaa', cursive;
-  letter-spacing: 1.1px;
-  color:rgb(28, 28, 28);
-  letter-spacing: 0.2px;
-  font-family: 'Comfortaa', cursive;
-  letter-spacing: 1.1px;
-  min-height: 100vh;
+  color: #090C02;
+  background: #E5D0E3;
+  font-family: 'Archivo', sans-serif;
+  font-weight: 400;
+  // font-family: 'Comfortaa', cursive;
+  // min-height: 100vh;
+  // letter-spacing: 0.2px;
+  // letter-spacing: 1.1px;
+  // background: linear-gradient(to bottom, rgb(182, 244, 146), rgb(51, 139, 147));;
 }
 
 button:active {
