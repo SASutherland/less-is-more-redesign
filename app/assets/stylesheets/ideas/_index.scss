@@ -1,12 +1,13 @@
 // Import page-specific CSS files here.
 @import "swiper";
 
-.fullcard-container{
-  height: 260vh;
-}
-.body{
-  height: 210vh !important;
-}
+// .fullcard-container{
+//   height: 260vh;
+// }
+
+// .body {
+//   height: 210vh !important;
+// }
 
 button:not(:disabled),
 [type="button"]:not(:disabled),
@@ -22,7 +23,8 @@ button:not(:disabled),
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  height: 253vh;
+  // height: 253vh;
+  // margin-top: -70px;
 }
 
 .ideas-card {
@@ -33,11 +35,10 @@ button:not(:disabled),
   border-radius:  20px;
   padding: 0px 25px 0px 25px;
   flex-direction: row;
-  margin-top: -508px;
   padding-top: 20px;
   padding-bottom: 30px;
-  margin-bottom: 30px;
-  height: 159vh;
+  margin-bottom: 26px;
+  height: 1328px;
 }
 
 .ideas-card h2 {
@@ -47,9 +48,7 @@ button:not(:disabled),
 }
 
 .ideas-card p {
-  font-size: 18px;
-  margin-bottom: 0rem;
-  margin-bottom: 0.5rem;
+  font-size: 17px;
   text-align: center;
 }
 

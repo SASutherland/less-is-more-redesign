@@ -1,6 +1,3 @@
-
-<div class="fullcard-container">
-
   <div class="ideas-container">
 
     <div class="ideas-card">
@@ -11,8 +8,6 @@
       <div class="ideas-card-title">
         <p>Search for ideas anywhere in the world</p>
       </div>
-
-      <br>
 
       <div class="d-none" id="marker-get"><%= @markers %></div>
       <div id="map" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>" data-markers="<%= @markers.to_json %>" style="width: 100%; height: 390px;"></div>
@@ -99,11 +94,11 @@
 
 
 
-      <h2 class="pt-3 tinder--title" style="margin-bottom: -10px;">Ideas for You</h2>
+      <h2 class="pt-5 tinder--title" style="margin-bottom: -10px;">Ideas for You</h2>
 
 
       <div class="swipe-instructions">
-        <p >Swipe ideas to the <strong>right</strong> to add them to your targets</p>
+        <p >Swipe ideas to the <strong>right</strong> to add them to your list of targets</p>
       </div>
 
       <div class="tinder">
@@ -127,11 +122,21 @@
         <button id="love"><i class="fa fa-heart"></i></button>
       </div>
 
+      <br>
+
+      <div class="container">
+        <%= link_to "My Targets", favourites_path(refresh: true), class: "btn btn-gradient px-5" %>
+      </div>
+
+<!--
+
       <div class="container">
         <div class="button-container">
           <a class="mask" href="favourite"><strong>Set My Target!</strong></a>
           <%= link_to ' <button type="button" name="Hover" >Set My Target!</button>'.html_safe, favourites_path(refresh: true) %>
       </div>
+
+-->
 
   </div>
 </div>
