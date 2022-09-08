@@ -17,7 +17,7 @@
         <h2 class="question question1"> Where do you live?</h2>
         <div class="form-group">
           <select class="form-control" id="country" name="country" >
-            <option value="" disabled selected>Select your country</option>
+            <option value="" disabled selected> Select your country</option>
             <% ApplicationRecord::COUNTRIES.each do |country|%>
               <option value="<%= country %>" > <%=country %> </option>
             <% end %>
@@ -32,17 +32,17 @@
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> How do you go to work?</h2>
+        <h2 class="question"> How do you usually travel to school / work?</h2>
         <div class="form-group">
 
            <select class="form-control" id="work" name="work">
                 <option value="" disabled selected>Select...</option>
 
                 <option value="car">Car</option>
-                <option value="electrical_car">Electrical Car</option>
+                <option value="electrical_car">Electric Car</option>
                 <option value="public_transport">Public Transport</option>
                 <option value="bike">Bike</option>
-                <option value="foot">Foot</option>
+                <option value="foot">Walk</option>
             </select>
         </div>
       </div>
@@ -55,14 +55,14 @@
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> How many flights per year?</h2>
+        <h2 class="question"> How many flights do you take per year?</h2>
         <div class="form-group">
           <select class="form-control" id="flght" name="flight">
                 <option value="" disabled selected>Select...</option>
                 <option value="1flight">1 flight</option>
-                <option value="2_3flights">2 to 3 flights</option>
-                <option value="4_6flights">4 to 6 flights</option>
-                <option value="more6flights">more than 6 flights</option>
+                <option value="2_3flights">2-3 flights</option>
+                <option value="4_6flights">4-6 flights</option>
+                <option value="more6flights">More than 6 flights</option>
             </select>
         </div>
       </div>
@@ -75,7 +75,7 @@
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> Your favorite food?</h2>
+        <h2 class="question"> Which of these foods do you eat most often?</h2>
         <div class="form-group">
           <select class="form-control" id="food" name="food">
                 <option value="" disabled selected>Select...</option>
@@ -96,11 +96,11 @@
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
 
-        <h2 class="question"> Your ideal room temperature?</h2>
-        <div clas="d-flex ">
+        <h2 class="question"> What is your ideal room temperature?</h2>
+        <div class="d-flex">
           <input type="range" min="16" max="25" value="20" class="slider" id="myRange" name="myrange">
-          <p> <span id="demo" > </span> Degrees</p>
         </div>
+          <p> <span id="demo" > </span> Degrees</p>
       </div>
 
 
@@ -114,23 +114,31 @@
           <i class="fa-solid fa-house-chimney "></i>
           <i class="fa-solid fa-champagne-glasses current"></i>
         </div>
-        <h2 class="question"> How do you mostly spend your free-time?</h2>
-        <select class="form-control" id="leisure" name="leisure">
+        <h2 class="question"> How do you typically spend your free time?</h2>
+        <select class="form-control justify-content-center" id="leisure" name="leisure">
           <option value="" disabled selected>Select...</option>
-          <option  value="traveling">Traveling</option>
-          <option value="chilling">Chilling at home</option>
-          <option value="shopping">Shopping</option>
-          <option value="sports">Sport and Arts</option>
+          <option value="chilling">Relaxing at home</option>
           <option value="hanging_out">Hanging out </option>
+          <option value="shopping">Going shopping</option>
+          <option value="sports">Playing sports</option>
+          <option  value="traveling">Traveling</option>
         </select>
       </div>
 
+      <div class="container" id="button-survey-results" >
+        <button class="btn btn-gradient" type="submit" name="Hover">Get Your Results!</button>
+      </div>
+
+<!--
+
       <div class="container " id="buttonsurvey" >
         <div class="button-container">
-          <span  class="mask"> <strong>Get your results</strong></span>
+          <span  class="mask"> <strong>Get your results!</strong></span>
           <button class="button" type="submit" name="Hover">Get your results</button>
         </div>
       </div>
+
+-->
 
   </form>
 </div>
