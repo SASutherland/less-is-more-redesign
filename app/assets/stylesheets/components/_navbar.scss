@@ -10,16 +10,17 @@
 .navbar-lewagon .navbar-brand img {
   width: 40px;
 }
-.navbar h1{
-  font-family: 'Rubik Microbe', cursive;
-  margin-top: -3.5rem;}
 
+// .navbar h1{
+//   font-family: 'Rubik Microbe', cursive;
+//   margin-top: -3.5rem;}
 
 .avatarimg{
   width: 40px;
   height: 40px;
   border-radius: 50%;
   z-index: 100;
+  margin-top: -45px;
 }
 
 .dropdown{
@@ -35,6 +36,7 @@
   font-size: 3vw;
   width: 48vw;
 }
+
 .dropdown-item{
   margin-bottom: 14px;
   z-index: 100;
@@ -42,6 +44,7 @@
   padding-top: 3vh ;
   text-align: center;
 }
+
 .dropdown-item-last{
   margin-bottom: 10px;
   z-index: 100;
@@ -49,6 +52,14 @@
   padding-top: 3vh ;
   text-align: center;
 }
+
 .dropimg{
   position: relative;
+}
+
+.navbar-logo {
+  color:#1F487E;
+  font-family: 'Anton', sans-serif;
+  font-size: 75px;
+  margin-top: -2rem;
 }
