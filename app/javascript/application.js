@@ -109,9 +109,9 @@ document.addEventListener('turbo:load', () => {
         leisureUser.dataset.value],
 
       fill: true,
-      backgroundColor: '#9DE192',
-      borderColor: '#9DE192',
-      pointBackgroundColor: '#9DE192',
+      backgroundColor: '#93E5AB',
+      borderColor: '#93E5AB',
+      pointBackgroundColor: '#93E5AB',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgb(255, 99, 132)'
