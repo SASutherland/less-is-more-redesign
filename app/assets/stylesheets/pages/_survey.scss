@@ -3,19 +3,20 @@
 
 }
 
-.card{
-  height:59vh;
-  width:90vw;
+.card {
+  height: 356px;
+  width: 90vw;
   border-radius: 30px;
   margin: 0 auto;
-  box-shadow: 2px 6px 6px #6f6f6f;
-  line-height: 25vw;
-  margin-bottom: 25vw;
+  box-shadow: 0px 3px 6px #6f6f6f;
+  /* line-height: 75px; */
+  margin-bottom: 24px;
 }
 
-.cardsurvey1{
-  height:67vh;
-  margin-top: 15vw;;
+.cardsurvey1 {
+  height: 405px;
+  // height:67vh;
+  // margin-top: 15vw;;
 }
 
 .title{
@@ -25,14 +26,14 @@
   text-align: center;
 }
 
-.icons{
-  margin-left: 10vw;
-  margin-top: 5vw;
+.icons {
+  margin-left: 53px;
+  margin-top: -13px;
 }
 
-.icons1{
-  margin-left: 10vw;
-  margin-top: -18vw;
+.icons1 {
+  margin-left: 53px;
+  margin-top: -116px;
 }
 .fa-solid{
   font-size: 5.5vw;
@@ -59,25 +60,24 @@
   margin-top: 4vw;
   margin-right: 10vw;
   text-align: center;
-  padding-left: 0vw;
-  padding-right: 8vw;
-
+  padding-left: 20px;
+  padding-right: 58px;
 }
 
 .question1{
-  font-size: 6vw;
+  font-size: 25px;
   font-weight: bold;
   font-style: oblique;
-  margin-top: 2vw;
-  margin-bottom: 15vw;
+  margin-top: 20px;
+  margin-bottom: 54px;
 }
 
 
 .form-control{
-  height:10vh;
-  width:60vw;
+  height: 56px;
+  width: 60vw;
   border-radius: 30px;
-  margin-left: 12vw;
+  margin-left: 47px;
 }
 
 .slicer{
@@ -96,9 +96,9 @@
   transition: opacity .2s;
   display: flex;
   flex-direction: column;
-  width:60vw;
-  margin-left: 13vw;
-
+  width: 60vw;
+  margin-left: 52px;
+  margin-top: -49px;
 }
 
 
@@ -108,7 +108,7 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #6D9DC5;
   cursor: pointer;
 }
 
@@ -116,7 +116,7 @@
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background: #04AA6D;
+  background: #6D9DC5;
   cursor: pointer;
 }
 
@@ -145,27 +145,27 @@
   padding: -13px;
 }
 
-.button-container button {
-  width: 101%;
-  height: 100%;
-  font-size: 6vw;
-  background: #111718;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  border: none;
-  color: white;
-  cursor: pointer;
-  animation: anim2 0.7s steps(22) forwards;
-  background-color: black;
-}
+// .button-container button {
+//   width: 101%;
+//   height: 100%;
+//   font-size: 6vw;
+//   background: #111718;
+//   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+//   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+//   -webkit-mask-size: 2300% 100%;
+//   mask-size: 2300% 100%;
+//   border: none;
+//   color: white;
+//   cursor: pointer;
+//   animation: anim2 0.7s steps(22) forwards;
+//   background-color: black;
+// }
 
-.button-container button:hover {
-  animation: anim1 0.7s steps(22) forwards;
-  color: rgb(195, 191, 191);
-  background-color: black;
-}
+// .button-container button:hover {
+//   animation: anim1 0.7s steps(22) forwards;
+//   color: rgb(195, 191, 191);
+//   background-color: black;
+// }
 
 
 
@@ -204,6 +204,7 @@
   }
 }
 
-#bntsurvey{
-  margin-top: 0vh;
+#button-survey-results {
+  margin-top: -32px;
+  margin-bottom: 14px;
 }
