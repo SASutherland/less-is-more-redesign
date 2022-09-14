@@ -11,14 +11,19 @@
 .home-header {
   color: #0B6F53;
   font-family: 'Anton', sans-serif;
-  font-size: 60px;
+  font-size: 66px;
   font-weight: bold;
   text-align: center;
 }
 
-.less-is-more-logo-color {
-  height: 20px;
-  width: 20px;
+.less-is-more-logo {
+  position: absolute;
+  height: 900px;
+  width: 790px;
+  opacity: 0.1;
+  z-index: -1;
+  top: -18.5%;
+  left: -2%;
 }
 
 .home-co2 {
