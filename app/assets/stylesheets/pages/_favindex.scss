@@ -1,7 +1,6 @@
 .container-target{
   display: flex;
   justify-content: center;
-  height: fit-content;
 }
 .backcard{
   box-shadow: 10px 10px 5px #ccc;
@@ -12,8 +11,8 @@
   background-color: white;
   width: 90vw;
   font-weight: bold;
-  text-align: left;
 }
+
 .backcard h1{
   margin-left: 1rem;
   margin-top: 1rem;
@@ -22,6 +21,13 @@
   margin-top: 8vw;
   margin-bottom: 20px;
 }
+
+.target-headers {
+  text-align: left;
+  position: relative;
+  left: -10%;
+}
+
 .backcard-co2-header {
   margin-left: -4.8rem;
   margin-top: 0rem;
@@ -76,17 +82,17 @@
 // h1{
 //   margin-bottom: 3vh;
 // }
-// .cardTarget{
-//   align-items: center;
-//   text-align: center;
-//   justify-content: center;
-//   line-height: 10vh;
-//   width: 80%;
-//   background-color: rgba($color: rgb(242, 241, 241), $alpha: 1.0);
-//   height: fit-content;
-//   margin-bottom: 8vh;
-//   box-shadow: 2px 6px 6px #d2d2d2;
-// }
+.cardTarget{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  line-height: 10vh;
+  width: 80%;
+  background-color: rgba($color: rgb(242, 241, 241), $alpha: 1.0);
+  height: fit-content;
+  margin-bottom: 8vh;
+  box-shadow: 2px 6px 6px #d2d2d2;
+}
 
 // .backcard{
 //   box-shadow: 10px 10px 5px #ccc;
@@ -118,32 +124,34 @@
 //   margin-bottom: 0rem;
 // }
 
-// .myactiontitle{
-//   margin-left: -17rem !important;
-// }
+.myactiontitle{
+  margin-left: -17rem !important;
+}
 
-// .myactiontotal{
-//  font-size: -4vw ;
-//  line-height: 1vh;
-//  margin-bottom: 4vh;
-//  margin-bottom: 1.5rem;
-// }
-// .targetchart{
-//   height: 30%;
-//   border-radius: 8px;
-//   width: 90%;
-//   margin-bottom: 2rem;
-// }
-// // .actionbtncont{
-// //   margin-left: 8rem;
-// //   display: flex;
-// //   width: 90%;
-// //   align-items: center;
-// //   justify-content: space-around;
-// //   img{
-// //     margin-bottom: 2rem;
-// //   }
-// // }
+.myactiontotal{
+ font-size: -4vw ;
+ line-height: 1vh;
+ margin-bottom: 4vh;
+ margin-bottom: 1.5rem;
+}
+
+.targetchart{
+  height: 30%;
+  border-radius: 8px;
+  width: 90%;
+  margin-bottom: 2rem;
+}
+
+.actionbtncont{
+  margin-left: 8rem;
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: space-around;
+  img{
+    margin-bottom: 2rem;
+  }
+}
 // .saved_ideas{
 //   background-color: white;
 //   width: 90%;

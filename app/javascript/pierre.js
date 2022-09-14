@@ -5,14 +5,14 @@ const pierreCart = () => {
   const labels = [
     'My Footprint',
     'My Target',
-    'Goal 2030',
+    'Goal for 2030',
   ];
 
   const data = {
     labels: labels,
     datasets: [{
-      label: 'Co2 Footprint (in kg/year)',
-      backgroundColor: ['rgba(182, 244, 146, 0.4)', 'rgba(51, 139, 147, 0.4)', 'rgba(165, 42, 42, 0.4)'],
+      label: 'Annual Co2 Footprint (kg)',
+      backgroundColor: ['rgba(31, 72, 126, 0.9)', 'rgba(11, 111, 83, 1)', 'rgba(247, 231, 51, 1)'],
       borderColor: 'rgb(255, 99, 132)',
       data: [result.dataset.survey, result.dataset.result, 2000]
     }]

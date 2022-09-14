@@ -1,15 +1,31 @@
 <div class="container-target">
   <div class="backcard">
     <h1>My Targets</h1>
+    <div class="target-headers mb-3">
+        <h4>My Footprint: <strong><span style="color: #1F487E;"><%= @co2_weighted_user.round(0) %></span></strong> kg</h4>
+        <h4>My Actions: -<strong><span style="color: #ca054d;"><%= @co2_weighted_user.round(0) - @new_results.round(0) %></span></strong> kg</h4>
+        <h4>My Target: <strong><span style="color: #0B6F53;"><%= @new_results.round(0) %></span></strong> kg</h4>
+    </div>
+
+<!--
+    <h1>My Targets</h1>
     <h4 class="mt-2 backcard-co2-header">My Co2 target: <span style="color: #6D9DC5";><%= @co2_weighted_user.round(0) %></span></h4>
+
     <div class="targetchart">
       <canvas id="pChart"></canvas>
     </div>
+-->
+
+    <div class="targetchart">
+      <canvas id="pChart"></canvas>
+    </div>
+
     <div class="actionbtncont">
       <h4 class="mt-2 backcard-actions-header">My Actions</h4>
       <a href="/ideas"><%= image_tag "plus-circle-fill.png" %></a>
     </div>
-<div style="display: none;" class="new_result" data-result="<%=@new_results%>" data-survey="<%= @co2_weighted_user %>"></div>
+
+    <div style="display: none;" class="new_result" data-result="<%=@new_results%>" data-survey="<%= @co2_weighted_user %>"></div>
 
     <div class="saved_ideas">
 
