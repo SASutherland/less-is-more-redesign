@@ -55,12 +55,12 @@ const swiper = () => {
 
         if (keep) {
 
-          fetch(`http://localhost:3000/ideas/${el.dataset.id}/favourites`, {
+          fetch(`http://less-is-more-redesign.herokuapp.com/ideas/${el.dataset.id}/favourites`, {
             method: "POST", headers: { "Accept": "text/plain"}
           })
             .then(response => response.text())
             .then(data => console.log(data))
-            
+
           event.target.style.transform = '';
 
         } else {
@@ -92,7 +92,7 @@ const swiper = () => {
         if (love) {
           card.style.transform = 'translate(' + moveOutWidth + 'px, -100px) rotate(-30deg)';
 
-          fetch(`http://localhost:3000/ideas/${card.dataset.id}/favourites`, {
+          fetch(`http://less-is-more-redesign.herokuapp.com/ideas/${card.dataset.id}/favourites`, {
             method: "POST", headers: { "Accept": "text/plain"}
           })
             .then(response => response.text())
