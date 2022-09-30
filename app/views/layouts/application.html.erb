@@ -25,13 +25,17 @@
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%= render "shared/flashes" %>
+    <div class="row justify-content-center">
+      <div class="body-width">
+        <%= render "shared/navbar" %>
+        <%= render "shared/flashes" %>
 
-    <%= yield %>
+        <%= yield %>
 
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+      </div>
+    </div>
   </body>
 
 </html>

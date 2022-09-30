@@ -1,13 +1,3 @@
-// .picto{
-//   text-align: center;
-//   font-size: 50vw;
-//   font-family: 'Rubik Microbe', cursive;
-//   background: -webkit-linear-gradient(#32723c,#222539);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   margin-top: 10vw;;
-// }
-
 .banner {
   background-size: cover;
   background-position: center;
@@ -18,7 +8,7 @@
   margin: 0;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
+  font-size: 31px;
   font-weight: bold;
 }
 
@@ -30,9 +20,12 @@
 }
 
 .footer {
-  padding: 20px 24px;
+  color: white;
+  background: black;
   font-size: 16px;
-  margin-bottom: -10px;
+  margin-bottom: -8px;
+  padding: 20px 24px;
+  height: 100%;
 }
 
 .home-header {
@@ -274,3 +267,13 @@ margin-left: 8.5rem;
     mask-position: 100% 0;
   }
 }
+
+// .picto{
+//   text-align: center;
+//   font-size: 50vw;
+//   font-family: 'Rubik Microbe', cursive;
+//   background: -webkit-linear-gradient(#32723c,#222539);
+//   -webkit-background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   margin-top: 10vw;;
+// }

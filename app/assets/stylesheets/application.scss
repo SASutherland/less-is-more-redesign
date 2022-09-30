@@ -24,30 +24,21 @@
 @import "ideas/index";
 @import "pages/ideaform";
 
-
 body {
   color: #090C02;
   background: #ffd6de;
   font-family: 'Archivo', sans-serif;
   font-weight: 400;
   max-width: 100%;
+  min-width: 320px;
   overflow-x: hidden;
-  // font-family: 'Comfortaa', cursive;
-  // min-height: 100vh;
-  // letter-spacing: 0.2px;
-  // letter-spacing: 1.1px;
-  // background: linear-gradient(to bottom, rgb(182, 244, 146), rgb(51, 139, 147));;
+}
+
+.body-width {
+  max-width: 435px;
 }
 
 button:active {
   outline: none;
   border: none;
 }
-
-// h1 {
-//   font-size : 50px;
-// }
-
-// .typedcont {
-//   color: #4FD1C5;
-// }
