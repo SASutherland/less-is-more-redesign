@@ -1,27 +1,30 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon" >
-  <div class="container-fluid">
-    <%= link_to root_path do %>
-      <p class="navbar-logo"><<span style="color:#00B865;">=</span>></p>
-    <% end %>
-   <!--  <%= link_to image_tag("logo.png", alt: "Brand",style:" width: 20vw;"), root_path, :class=>'navbar-brand'  %> -->
-    <div class="dropimg" data-controller="dropdown-menu" >
-      <div data-action="click->dropdown-menu#menu">
-        <%= image_tag "avatar_blue.png", class:"avatarimg"%>
-      </div>
-      <div class="hidden dropdown" data-dropdown-menu-target="dropdown">
-          <% if user_signed_in? %>
-                <%= link_to "Footprint", results_path, class: "dropdown-item" %>
-                <%= link_to "Ideas", ideas_path, class: "dropdown-item" %>
-                <%= link_to "Targets", favourites_path, class: "dropdown-item" %>
-                <%= link_to "Community", search_path, class: "dropdown-item" %>
-                <%= link_to "About", about_path, class: "dropdown-item" %>
-                <hr>
-                <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-          <% else %>
-              <%= link_to "Sign up", new_user_registration_path, class: "dropdown-item" %>
-              <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
-          <% end %>
+
+  <div class="container-fluid" style="margin-bottom: -1.5rem;">
+
+      <%= link_to root_path do %>
+        <p class="logo-text"><%= image_tag "less-is-more-logo-dark.png", class:"logo-image" %>less<span style="color:#00B865;">is</span>more</p>
+      <% end %>
+
+      <div class="dropimg" data-controller="dropdown-menu" >
+        <div data-action="click->dropdown-menu#menu">
+          <%= image_tag "avatar_blue.png", class:"avatarimg"%>
         </div>
-    </div>
+        <div class="hidden dropdown" data-dropdown-menu-target="dropdown">
+            <% if user_signed_in? %>
+                  <%= link_to "Footprint", results_path, class: "dropdown-item" %>
+                  <%= link_to "Ideas", ideas_path, class: "dropdown-item" %>
+                  <%= link_to "Targets", favourites_path, class: "dropdown-item" %>
+                  <%= link_to "Community", search_path, class: "dropdown-item" %>
+                  <%= link_to "About", about_path, class: "dropdown-item" %>
+                  <hr>
+                  <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+            <% else %>
+                <%= link_to "Sign up", new_user_registration_path, class: "dropdown-item" %>
+                <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
+            <% end %>
+          </div>
+      </div>
+
   </div>
 </div>
