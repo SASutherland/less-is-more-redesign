@@ -1,64 +1,73 @@
-<div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1607283330412-813130f6811c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80);">
+  <div class="container">
+    <h1><strong>Take action</strong> against climate change</h1>
+    <br>
+    <p>Explore ideas on how to reduce your carbon footprint as part of a global community.</p>
+    <br>
+    <%= link_to "Get started!", survey_path(refresh: true), class: "btn btn-gradient", style: "width: 65%;" %>
+  </div>
+</div>
+
+<!--
+
   <p class="home-header">less<span style="color: #00B865;">is</span>more
   <%= image_tag "less-is-more-logo-dark.png", class: "less-is-more-logo" %></p>
   <p class="home-co2">is a Co2</p>
 
-<div class="typedcont">
-  <h4><span data-controller="typed" id="typed"></span></h4>
-</div>
-
-<div class="container arrow-wrapper d-flex">
-  <div class="container arrow d-flex">
-    <div class="chevron"></div>
-    <div class="chevron"></div>
-    <div class="chevron"></div>
+  <div class="typedcont">
+    <h4><span data-controller="typed" id="typed"></span></h4>
   </div>
-</div>
-<br>
-<div class="card-product card1">
-  <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287545/LessIsMore_ai/survey_ydvkda.jpg" />
-  <div class="card-product-infos">
-    <h2>Take the Quiz</h2>
-    <p> Profile your impact by answering a few questions </p>
+
+  <div class="container arrow-wrapper d-flex">
+    <div class="container arrow d-flex">
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+      <div class="chevron"></div>
+    </div>
   </div>
-</div>
-
-<div class="card-product">
-  <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287364/LessIsMore_ai/results_elshdv.jpg" />
-  <div class="card-product-infos">
-    <h2>See your Results </h2>
-    <p>Learn about your current carbon footprint</p>
+  <br>
+  <div class="card-product card1">
+    <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287545/LessIsMore_ai/survey_ydvkda.jpg" />
+    <div class="card-product-infos">
+      <h2>Take the Quiz</h2>
+      <p> Profile your impact by answering a few questions </p>
+    </div>
   </div>
-</div>
 
-
-<div class="card-product">
-  <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294546/LessIsMore_ai/ideas_pxf0wm.png" />
-  <div class="card-product-infos">
-    <h2>Get Inspired</h2>
-    <p>Explore actions you can take to reduce your Co2</p>
+  <div class="card-product">
+    <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287364/LessIsMore_ai/results_elshdv.jpg" />
+    <div class="card-product-infos">
+      <h2>See your Results </h2>
+      <p>Learn about your current carbon footprint</p>
+    </div>
   </div>
-</div>
 
 
-<div class="card-product">
-  <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294643/LessIsMore_ai/community_rzsnzt.png" />
-  <div class="card-product-infos">
-    <h2>Join with Friends</h2>
-    <p>Build a community and share your ideas together</p>
+  <div class="card-product">
+    <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294546/LessIsMore_ai/ideas_pxf0wm.png" />
+    <div class="card-product-infos">
+      <h2>Get Inspired</h2>
+      <p>Explore actions you can take to reduce your Co2</p>
+    </div>
+  </div>
+
+
+  <div class="card-product">
+    <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294643/LessIsMore_ai/community_rzsnzt.png" />
+    <div class="card-product-infos">
+      <h2>Join with Friends</h2>
+      <p>Build a community and share your ideas together</p>
+
+    </div>
+  </div>
+
+  <div class="container">
+
+    <%= link_to "Take the Quiz!", survey_path(refresh: true), class: "btn btn-gradient" %>
+
+    <div class="button-container">
+      <a class="mask" style="font-weigth-bold" href="survey"><strong>Take the Quiz!</strong></a>
+      <%= link_to ' <button type="button" name="Hover" >Take the Quiz!</button>'.html_safe, survey_path(refresh: true) %>
+    </div>
 
   </div>
-</div>
-
-<div class="container">
-
-  <%= link_to "Take the Quiz!", survey_path(refresh: true), class: "btn btn-gradient" %>
-
-  <!--
-  <div class="button-container">
-    <a class="mask" style="font-weigth-bold" href="survey"><strong>Take the Quiz!</strong></a>
-    <%= link_to ' <button type="button" name="Hover" >Take the Quiz!</button>'.html_safe, survey_path(refresh: true) %>
-  </div>
-  -->
-
-</div>

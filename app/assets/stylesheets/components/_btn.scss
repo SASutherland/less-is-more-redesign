@@ -30,16 +30,16 @@
   width: 100%;
   padding: 12px 0px;
   border-radius: 25px;
-  font-weight: bold;
+  // font-weight: bold;
   font-size: 24px;
   margin-top: 22px;
-  background: linear-gradient(#6D9DC5, #1F487E);
+  background: linear-gradient(#00B865, #0B6F53);
   transition: background 0.3s ease;
-  border: 1px solid #0F60C4
+  // border: 1px solid #0F60C4
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(#7db4e2, #285ca1);
+  background: linear-gradient(#00df7b, #10a279);
   color: white;
 }
 
