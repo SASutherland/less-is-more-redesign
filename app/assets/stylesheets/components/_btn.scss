@@ -33,15 +33,16 @@
   // font-weight: bold;
   font-size: 24px;
   margin-top: 22px;
-  background: linear-gradient(#00B865, #0B6F53);
+  background: linear-gradient(#7cc0f3, #3070C5);
   transition: background 0.3s ease;
-  // border: 1px solid #0F60C4
+  border: 1px solid #1F487E
 }
 
 .btn-gradient:hover {
-  background: linear-gradient(#00df7b, #10a279);
+  background: linear-gradient(#8dcbfd, #3a88ee);
   color: white;
   font-weight: bold;
+  border: 1px solid #3a88ee;
 }
 
 
