@@ -149,7 +149,7 @@ class ApplicationRecord < ActiveRecord::Base
   "Thailand",
   "Togo",
   "Tunisia",
-  "Turkiye",
+  "Turkey",
   "Turkmenistan",
   "Uganda",
   "Ukraine",
