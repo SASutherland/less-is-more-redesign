@@ -2,20 +2,24 @@
     <div id="refresh" style="display: none;" data-refresh="<%= @refresh %>"></div>
   <% end %>
 
-  <form action="/results">
-      <div class="row survey-card survey-card-1 d-flex ">
-        <h1 class="survey-title"> Profile your Lifestyle </h1>
-        <p class="text-center px-4">Answer a few short questions so we can assess your carbon footprint and offer recommendations on how to reduce your Co2 impact!</p>
+  <form class ="d-flex justify-content-center" style="background: #00B865;" action="/results">
 
-        <div class="icons-container">
+      <div class="row survey-card">
+        <h1 class="survey-title pb-2"> Profile your Lifestyle </h1>
+
+          <p class="text-center px-5 pb-4">Answer the following questions so we can assess your carbon footprint and help you reduce your Co2 impact!</p>
+
+          <div class="icons-container">
             <i class="fa-solid fa-user current"></i>
             <i class="fa-solid fa-car-side"></i>
             <i class="fa-solid fa-utensils"></i>
             <i class="fa-solid fa-house-chimney"></i>
             <i class="fa-solid fa-champagne-glasses"></i>
           </div>
-        <h2 class="question question1"> Where do you live?</h2>
-        <div class="form-group">
+
+        <h2 class="question px-5"> Where do you live?</h2>
+
+        <div class="form-group d-flex justify-content-center">
           <select class="form-control" id="country" name="country" >
             <option value="" disabled selected> Select your country</option>
             <% ApplicationRecord::COUNTRIES.each do |country|%>
@@ -23,17 +27,18 @@
             <% end %>
           </select>
         </div>
-      </div>
-      <div class="row card d-flex ">
-        <div class="icons justify-content-between">
+
+        <div class="icons-container">
           <i class="fa-solid fa-user "></i>
           <i class="fa-solid fa-car-side current"></i>
           <i class="fa-solid fa-utensils"></i>
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> How do you usually travel to school / work?</h2>
-        <div class="form-group">
+
+        <h2 class="question px-5"> How do you usually travel to school / work?</h2>
+
+        <div class="form-group d-flex justify-content-center">
 
            <select class="form-control" id="work" name="work">
                 <option value="" disabled selected>Select...</option>
@@ -45,38 +50,38 @@
                 <option value="foot">Walk</option>
             </select>
         </div>
-      </div>
 
-      <div class="row card d-flex ">
-        <div class="icons justify-content-between">
+        <div class="icons-container">
           <i class="fa-solid fa-user "></i>
           <i class="fa-solid fa-car-side current"></i>
           <i class="fa-solid fa-utensils"></i>
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> How many flights do you take per year?</h2>
-        <div class="form-group">
+
+        <h2 class="question px-5"> How many flights do you take per year?</h2>
+
+        <div class="form-group d-flex justify-content-center">
           <select class="form-control" id="flght" name="flight">
                 <option value="" disabled selected>Select...</option>
                 <option value="1flight">1 flight</option>
                 <option value="2_3flights">2-3 flights</option>
                 <option value="4_6flights">4-6 flights</option>
                 <option value="more6flights">More than 6 flights</option>
-            </select>
+          </select>
         </div>
-      </div>
 
-      <div class="row card d-flex ">
-        <div class="icons justify-content-between">
+        <div class="icons-container">
           <i class="fa-solid fa-user "></i>
           <i class="fa-solid fa-car-side "></i>
           <i class="fa-solid fa-utensils current"></i>
           <i class="fa-solid fa-house-chimney"></i>
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
-        <h2 class="question"> Which of these foods do you eat most often?</h2>
-        <div class="form-group">
+
+        <h2 class="question px-5"> Which of these foods do you eat most often?</h2>
+
+        <div class="form-group d-flex justify-content-center">
           <select class="form-control" id="food" name="food">
                 <option value="" disabled selected>Select...</option>
                 <option value="beef">Beef</option>
@@ -85,10 +90,8 @@
                 <option value="vegetables">Vegetables</option>
           </select>
         </div>
-      </div>
 
-      <div class="row card slicer d-flex ">
-        <div class="icons justify-content-between">
+        <div class="icons-container">
           <i class="fa-solid fa-user "></i>
           <i class="fa-solid fa-car-side "></i>
           <i class="fa-solid fa-utensils "></i>
@@ -96,34 +99,36 @@
           <i class="fa-solid fa-champagne-glasses"></i>
         </div>
 
-        <h2 class="question"> What is your ideal room temperature?</h2>
-        <div class="d-flex">
+        <h2 class="question px-5">What temperature is your house in winter?</h2>
+
+        <div class="d-flex justify-content-center mb-3">
           <input type="range" min="16" max="25" value="20" class="slider" id="myRange" name="myrange">
         </div>
-          <p> <span id="demo" > </span> Degrees</p>
-      </div>
 
+        <div class="slider-question d-flex justify-content-center">
+          <p class="text-center"><span id="demo"></span> Degrees</p>
+        </div>
 
-
-
-      <div class="row card d-flex ">
-        <div class="icons justify-content-between">
+        <div class="icons-container">
           <i class="fa-solid fa-user "></i>
           <i class="fa-solid fa-car-side "></i>
           <i class="fa-solid fa-utensils "></i>
           <i class="fa-solid fa-house-chimney "></i>
           <i class="fa-solid fa-champagne-glasses current"></i>
         </div>
-        <h2 class="question"> How do you typically spend your free time?</h2>
-        <select class="form-control justify-content-center" id="leisure" name="leisure">
-          <option value="" disabled selected>Select...</option>
-          <option value="chilling">Relaxing at home</option>
-          <option value="hanging_out">Hanging out </option>
-          <option value="shopping">Going shopping</option>
-          <option value="sports">Playing sports</option>
-          <option  value="traveling">Traveling</option>
-        </select>
-      </div>
+
+        <h2 class="question px-5"> How do you typically spend your free time?</h2>
+
+        <div class="form-group d-flex justify-content-center">
+          <select class="form-control" id="leisure" name="leisure">
+            <option value="" disabled selected>Select...</option>
+            <option value="chilling">Relaxing at home</option>
+            <option value="hanging_out">Hanging out </option>
+            <option value="shopping">Going shopping</option>
+            <option value="sports">Playing sports</option>
+            <option  value="traveling">Traveling</option>
+          </select>
+        </div>
 
       <div class="container" id="button-survey-results" >
         <button class="btn btn-gradient" type="submit" name="Hover">Get Your Results!</button>
