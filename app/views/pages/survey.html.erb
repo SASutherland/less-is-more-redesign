@@ -1,19 +1,19 @@
-
-
   <% if @refresh%>
     <div id="refresh" style="display: none;" data-refresh="<%= @refresh %>"></div>
   <% end %>
 
   <form action="/results">
-      <div class="row card cardsurvey1 d-flex ">
-        <h1 class="title"> Profile your Lifestyle </h1>
-        <div class="icons1 justify-content-between">
-          <i class="fa-solid fa-solid1 fa-user current"></i>
-          <i class="fa-solid fa-solid1 fa-car-side"></i>
-          <i class="fa-solid fa-solid1 fa-utensils"></i>
-          <i class="fa-solid fa-solid1 fa-house-chimney"></i>
-          <i class="fa-solid fa-solid1 fa-champagne-glasses"></i>
-        </div>
+      <div class="row survey-card survey-card-1 d-flex ">
+        <h1 class="survey-title"> Profile your Lifestyle </h1>
+        <p class="text-center px-4">Answer a few short questions so we can assess your carbon footprint and offer recommendations on how to reduce your Co2 impact!</p>
+
+        <div class="icons-container">
+            <i class="fa-solid fa-user current"></i>
+            <i class="fa-solid fa-car-side"></i>
+            <i class="fa-solid fa-utensils"></i>
+            <i class="fa-solid fa-house-chimney"></i>
+            <i class="fa-solid fa-champagne-glasses"></i>
+          </div>
         <h2 class="question question1"> Where do you live?</h2>
         <div class="form-group">
           <select class="form-control" id="country" name="country" >

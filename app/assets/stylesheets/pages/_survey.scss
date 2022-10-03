@@ -1,59 +1,46 @@
-.container{
-  padding:20px;
-
-}
-
-.card {
-  height: 356px;
-  width: 90vw;
-  border-radius: 30px;
-  margin: 0 auto;
-  box-shadow: 0px 3px 6px #6f6f6f;
-  /* line-height: 75px; */
-  margin-bottom: 24px;
-}
-
-.cardsurvey1 {
+.survey-card-1 {
   height: 405px;
-  margin-top: 10px;
-  // height:67vh;
-  // margin-top: 15vw;;
 }
 
-.title{
-  font-size: 10vw;
+.survey-title {
+  font-size: 2rem;
   font-weight: bold;
-  margin-top: 8vw;
+  margin-top: 1rem;
   text-align: center;
 }
 
-.icons {
-  margin-left: 53px;
-  margin-top: -13px;
+.survey-card {
+  height: 356px;
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 3px 6px #6f6f6f;
+  margin: 10px 0px 10px 0px;
 }
 
-.icons1 {
-  margin-left: 53px;
-  margin-top: -116px;
+.icons-container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 4rem 0 4rem;
 }
-.fa-solid{
-  font-size: 5.5vw;
+
+.current {
+  background: #345f61;
+}
+
+.fa-solid {
+  font-size: 1rem;
   background:  #dfe0e0;
   border-radius: 50%;
   color: white;
-  padding:10px;
-  margin-top: 20vw;
+  padding: 10px;
+  width: 40px;
 }
 
-.fa-solid1{
-  margin-top: 30vw;
+.fa-user {
+  padding-left: 13px;
 }
 
-.current{
-  background:  #345f61;
-}
-
-.question{
+.question {
   font-size: 6vw;
   font-weight: bold;
   margin-bottom: 17vw;
@@ -64,14 +51,13 @@
   padding-left: 20px;
   padding-right: 58px;
 }
-
-.question1{
-  font-size: 25px;
+.question1 {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-style: oblique;
-  margin-top: 20px;
-  margin-bottom: 54px;
+  text-align: center;
+  margin-bottom: 10px;
 }
+
 
 
 .form-control{
@@ -102,7 +88,6 @@
   margin-top: -49px;
 }
 
-
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
@@ -126,7 +111,6 @@
   font-size: 7vw;
 }
 
-
 .button-container {
   position: relative;
   width: 70vw;
@@ -140,10 +124,6 @@
   background: #a2d696, ;
   border-radius: 10vw;
   font-size: 6vw;
-}
-
-.container-survey{
-  padding: -13px;
 }
 
 // .button-container button {
@@ -167,9 +147,6 @@
 //   color: rgb(195, 191, 191);
 //   background-color: black;
 // }
-
-
-
 
 .mask {
   position: absolute;
