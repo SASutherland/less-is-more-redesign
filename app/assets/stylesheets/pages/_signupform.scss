@@ -1,28 +1,25 @@
-// h2 {
-//   margin-left: 1rem;
-//   font-weight: bold;
-//   font-size: 45px;
-// }
-
-h4{
-  margin-left: 1rem;
-}
-.form-label{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.signtext{
+.signup-body {
+  background-color: #0B6F53;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -50px;
-}
-.signtext ul{
-  margin-left: -25px;
-  margin-bottom: -10px;
 }
 
-.signcard{
+.signup-title {
+  color: white;
+  margin-top: 1.5rem;
+}
+
+.signup-title h4 {
+  font-size: 18px;
+}
+
+.form-label {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.signcard {
   background-color: white;
   border-radius: 30px;
   box-shadow: 2px 6px 6px #6f6f6f;
@@ -31,23 +28,27 @@ h4{
   width: 90%;
   height: 100%;
   margin-left: 1.3rem;
-  .form-control{
+
+  .form-control {
+    border-radius: 5px;
     height: 47px;
     width: 90%;
     margin-left: 15px !important;
-    border-radius: 5px;
+    margin-bottom: 20px;
   }
 }
-.form-actions .button{
-  width: 50%;
-  margin-left: 2rem;
-  margin-bottom: 2.5rem;
-  margin-top: 1rem;
-}
-.form-text{
+
+// .form-actions .button {
+//   width: 50%;
+//   margin-left: 2rem;
+//   margin-bottom: 2.5rem;
+// }
+
+.form-text {
   margin-left: 1rem;
 }
-.btnsigncont{
+
+.btnsigncont {
   display: flex;
   justify-content: flex-end;
 }
