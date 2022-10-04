@@ -6,25 +6,25 @@
         <p class="logo-text"><%= image_tag "less-is-more-logo-dark.png", class:"logo-image" %>less<span style="color:#00B865;">is</span>more</p>
       <% end %>
 
-      <div class="dropimg" data-controller="dropdown-menu" >
-        <div data-action="click->dropdown-menu#menu">
-          <%= image_tag "avatar_blue.png", class:"avatarimg"%>
-        </div>
-        <div class="hidden dropdown" data-dropdown-menu-target="dropdown">
-            <% if user_signed_in? %>
-                  <%= link_to "Footprint", results_path, class: "dropdown-item" %>
-                  <%= link_to "Ideas", ideas_path, class: "dropdown-item" %>
-                  <%= link_to "Targets", favourites_path, class: "dropdown-item" %>
-                  <%= link_to "Community", search_path, class: "dropdown-item" %>
-                  <%= link_to "About", about_path, class: "dropdown-item" %>
-                  <hr>
-                  <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
-            <% else %>
-           <!-- <%= link_to "Sign up", new_user_registration_path, class: "dropdown-item" %> -->
-                <%= link_to "Log in", new_user_session_path, class: "dropdown-item" %>
-            <% end %>
+      <% if user_signed_in? %>
+        <div class="dropimg" data-controller="dropdown-menu" >
+          <div data-action="click->dropdown-menu#menu">
+            <%= image_tag "avatar_blue.png", class:"avatarimg"%>
           </div>
-      </div>
+          <div class="hidden dropdown" data-dropdown-menu-target="dropdown">
+            <%= link_to "Footprint", results_path, class: "dropdown-item" %>
+            <%= link_to "Ideas", ideas_path, class: "dropdown-item" %>
+            <%= link_to "Targets", favourites_path, class: "dropdown-item" %>
+            <%= link_to "Community", search_path, class: "dropdown-item" %>
+            <%= link_to "About", about_path, class: "dropdown-item" %>
+            <hr>
+            <%= link_to "Log out", destroy_user_session_path, data: {turbo_method: :delete}, class: "dropdown-item" %>
+          </div>
+        </div>
+      <% else %>
+           <!-- <%= link_to "Sign up", new_user_registration_path, class: "dropdown-item" %> -->
+        <%= link_to "Log in", new_user_session_path, class: "btn-login" %>
+      <% end %>
 
   </div>
 </div>

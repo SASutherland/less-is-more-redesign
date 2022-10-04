@@ -1,14 +1,18 @@
-.btn-ghost {
+.btn-login {
   color: #4A4A4A;
   border: 1px solid #4A4A4A;
-  padding: 8px 24px;
+  padding: 7px 20px 4px 20px;
   border-radius: 50px;
   font-weight: lighter;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  top: -6.5%;
+  right: 2%;
+  position: absolute;
+  white-space: nowrap;
 }
 
-.btn-ghost:hover {
+.btn-login:hover {
   opacity: 1;
 }
 
