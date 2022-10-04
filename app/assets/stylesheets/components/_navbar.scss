@@ -33,24 +33,23 @@
   top: 40px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
-  width: 9rem;
+  width: 10rem;
   z-index: 100;
 }
 
 .dropdown-item {
   z-index: 100;
-  font-size: 1.5rem;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  font-size: 1rem;
+  padding: 8px;
 }
 
-.dropdown-item-last {
-  margin-bottom: 10px;
-  z-index: 100;
-  font-size: 5vw;
-  padding-top: 3vh ;
-  text-align: center;
-}
+// .dropdown-item-last {
+//   margin-bottom: 10px;
+//   z-index: 100;
+//   font-size: 5vw;
+//   padding-top: 3vh ;
+//   text-align: center;
+// }
 
 .dropimg {
   position: relative;
