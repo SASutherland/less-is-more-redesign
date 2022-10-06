@@ -1,46 +1,52 @@
-// .resultscont{
-//   margin-top: 10vw;
-//   height: 203vh;
-// }
-
-#title-result{
-  font-size: 10vw;
-  font-weight: bold;
-  padding-top:10vw;
-  padding-bottom:10vw;
-  text-align: center;
-}
-
-.result-container{
-  align-items: center;
+.results-body {
+  color: #0B6F53;
+  display: flex;
   justify-content: center;
 }
 
-.titles--KPI{
+.results-card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 3px 6px #6f6f6f;
+  margin: 10px 0px 10px 0px;
+  width: 95%;
+}
+
+.results-title {
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.KPI-titles {
   width: 245px;
-  margin-left: 39px;
+  // margin-left: 39px;
 }
 
-.title-kpi {
-  font-size:5.5vw;
+.KPI-title {
+  color: grey;
+  font-size: 1rem;
   font-weight: bold;
-  margin-left: -67px;
-  margin-right: 23px;
 }
 
-
-.split{
-  font-weight: bold;
-  margin-top: 3vw;
-  font-size: 7.5vw;
-}
-
-#KPI{
-  font-size: 12vw;
-  color:  #6D9DC5;
+.KPI {
+  font-size: 2.5rem;
+  color: #3070c5;
   font-weight: bolder;
 }
 
+.target-weighted {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+// .split {
+//   font-weight: bold;
+//   margin-top: 3vw;
+//   font-size: 7.5vw;
+// }
 
 .results-card-pie{
   height: 736px;
@@ -52,15 +58,16 @@
   background: white;
 }
 
-#info{
-    font-size: 5.5vw;
-    background: #0f4fb7;
-    border-radius: 50%;
-    color: white;
-    padding: 4px;
-    text-align: center;
-    margin-top: 83px;
+.info {
+  font-size: 1rem;
+  background: #0f4fb7;
+  border-radius: 50%;
+  color: white;
+  padding: 4px;
+  text-align: center;
+  margin-top: 83px;
 }
+
 .tooltip-text {
   visibility: hidden;
   position: absolute;
@@ -84,26 +91,19 @@
   right: 120%;
 }
 
-
 .hover-text {
   position: relative;
   margin: -85px;
   text-align: center;
 }
 
-#targetW{
-  font-size: 45px;
-  font-weight: bold;
-}
+// .containerpie {
+//   justify-content: space-around;
+//   margin-right: 32px;
+//   margin-left: -38px;
+// }
 
-.containerpie{
-  justify-content: space-around;
-  margin-right: 32px;
-  margin-left: -38px;
-}
-
-
-#info2{
+#info2 {
   font-size: 5.5vw;
   background: #0f4fb7;
   border-radius: 50%;
@@ -113,26 +113,20 @@
   margin-top: 98px;
 }
 
+// .container-radar {
+//   align-items: center;
+//   justify-content: center;
+//   width:90vw;
+//   border-radius: 30px;
+//   margin-top: 30vw;
+//   box-shadow: 2px 6px 6px #6f6f6f;
+//   line-height: 25vw;
+//   background: white;
+//   margin-bottom: 30vh;
+//   height: 59vh;
+// }
 
-
-h3{
-  font-weight: bold;
-}
-
-.container-radar{
-  align-items: center;
-  justify-content: center;
-  width:90vw;
-  border-radius: 30px;
-  margin-top: 30vw;
-  box-shadow: 2px 6px 6px #6f6f6f;
-  line-height: 25vw;
-  background: white;
-  margin-bottom: 30vh;
-  height: 59vh;
-}
-
-.comparison{
+.comparison {
   font-weight: bold;
   margin-top: -85px;
   font-size: 7.5vw;
@@ -143,7 +137,7 @@ h3{
   justify-content: center;
 }
 
-#info3{
+#info3 {
   margin-left: 369px;
   font-size: 5.5vw;
   background: #0f4fb7;
@@ -152,7 +146,6 @@ h3{
   padding: 4px;
   text-align: center;
   margin-top: 124px;
-
 }
 
 .tooltipComparison{
@@ -163,9 +156,9 @@ h3{
   text-align: center;
 }
 
-#maskresult{
-  margin-top: -2vw;
-}
+// #maskresult{
+//   margin-top: -2vw;
+// }
 
 #buttonsurvey {
   margin-top: -20vw;
@@ -186,62 +179,59 @@ h3{
   font-size: 6vw;
 }
 
+// .button-container button {
+//   width: 101%;
+//   height: 100%;
+//   font-size: 6vw;
+//   background: #345f61;
+//   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+//   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+//   -webkit-mask-size: 2300% 100%;
+//   mask-size: 2300% 100%;
+//   border: none;
+//   color: white;
+//   cursor: pointer;
+//   animation: anim2 0.7s steps(22) forwards;
+// }
 
-
-
-.button-container button {
-  width: 101%;
-  height: 100%;
-  font-size: 6vw;
-  background: #345f61;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  border: none;
-  color: white;
-  cursor: pointer;
-  animation: anim2 0.7s steps(22) forwards;
-}
-
-.button-container button:hover {
-  animation: anim1 0.7s steps(22) forwards;
-  color: rgb(195, 191, 191);
-}
+// .button-container button:hover {
+//   animation: anim1 0.7s steps(22) forwards;
+//   color: rgb(195, 191, 191);
+// }
 
 
 
 
-.mask {
-  position: absolute;
-  color:  rgb(66, 64, 64);
-  text-align: center;
-  width: 101%;
-  font-weight: lighter;
-  font-size: 6vw;
-  margin-top: 7vw;
-  overflow: hidden;
-}
+// .mask {
+//   position: absolute;
+//   color:  rgb(66, 64, 64);
+//   text-align: center;
+//   width: 101%;
+//   font-weight: lighter;
+//   font-size: 6vw;
+//   margin-top: 7vw;
+//   overflow: hidden;
+// }
 
 
-@keyframes anim1 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
+// @keyframes anim1 {
+//   from {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+//   to {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+// }
 
-@keyframes anim2 {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
+// @keyframes anim2 {
+//   from {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+//   to {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+// }

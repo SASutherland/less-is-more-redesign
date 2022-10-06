@@ -12,9 +12,9 @@
             <%= image_tag "avatar_blue.png", class:"avatarimg"%>
           </div>
           <div class="hidden dropdown" data-dropdown-menu-target="dropdown">
-            <%= link_to "Footprint", results_path, class: "dropdown-item" %>
-            <%= link_to "Ideas", ideas_path, class: "dropdown-item" %>
-            <%= link_to "Targets", favourites_path, class: "dropdown-item" %>
+            <%= link_to "Footprint", results_path(refresh: true), class: "dropdown-item" %>
+            <%= link_to "Ideas", ideas_path(refresh: true), class: "dropdown-item" %>
+            <%= link_to "Targets", favourites_path(refresh: true), class: "dropdown-item" %>
             <%= link_to "Community", search_path, class: "dropdown-item" %>
             <%= link_to "About", about_path, class: "dropdown-item" %>
             <hr>

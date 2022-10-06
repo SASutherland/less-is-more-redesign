@@ -4,67 +4,90 @@
   <div class="food_user" data-value="<%= @food_user %>"></div>
   <div class="house_user" data-value="<%= @house_user %>"></div>
   <div class="leisure_user" data-value="<%= @leisure_user %>"></div>
+</div>
 
-  <div class="results-container">
-    <div class="results-card-pie">
-      <div class="container container-pie">
-        <div >
-          <h1 id="title-result"> My Co2 Impact </h1>
+  <div class="results-body d-flex justify-content-center">
+
+    <div class="results-card">
+
+      <div class="container">
+
+        <div>
+          <h1 class="results-title mb-4">My Co2 Impact</h1>
         </div>
-        <div class="middle ">
-          <div class="d-flex justify-content-around titles--KPI">
-            <h3 class="title-kpi">Co2 in kg</h3>
-            <h3 class="title-kpi">Target</h3>
-            <div class=" hover-text ">
-              <i class="fa-solid fa-circle-info" id="info"></i>
-              <span class="tooltip-text left" >Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>, which is far too high. We need to reach 2000 kg (2 tonnes) per person to ensure a liveable world for future generations.</span>
-            </div>
-          </div>
+
           <div class="d-flex justify-content-around">
-            <p id="KPI"><%= @co2_weighted.round(0) %></p>
-            <p id="targetW">2000</p>
+            <h3 class="KPI-title">Co2 (kg)</h3>
+            <h3 class="KPI-title">Target</h3>
+
+<!--
+            <div class="hover-text">
+              <i class="fa-solid fa-circle-info info"></i>
+              <span class="tooltip-text left">Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>, which is far too high. We need to reach 2000 kg (2 tonnes) per person to ensure a liveable world for future generations.</span>
+            </div>
+-->
+
           </div>
 
-          <div class="containerpie d-flex ">
-            <h2 class="split mx-0 text-center">Split per category</h2>
+          <div class="d-flex justify-content-around">
+            <p class="KPI"><%= @co2_weighted.round(0) %></p>
+            <p class="target-weighted">2000</p>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <h1 class="results-title">Impact per category</h1>
+
+<!--
             <div class="hover-text">
               <i class="fa-solid fa-circle-info" id="info2"></i>
               <span class="tooltip-text tooltip-text2 left" >Your Co2 impact is mainly coming from your transportation and your food.
               </span>
             </div>
+-->
+
           </div>
+
           <div class="my-3">
             <canvas id="myChart" style="display: block; box-sizing: border-box; height: 154px; width: 154.5px;" width="350" height="350"></canvas>
           </div>
+
         </div>
-  </div>
 
   <div class="container-radar">
     <div class="transportcountry" data-value="<%= @transport_country %>"></div>
     <div class="foodcountry" data-value="<%= @food_country %>"></div>
     <div class="housecountry" data-value="<%= @house_country %>"></div>
     <div class="leisurecountry" data-value="<%= @leisure_country %>"></div>
-    <div >
-      <h2 class="comparison mx-0 mb-0 text-center ">Comparison</h2>
+  </div>
 
+    <div>
+      <h1 class="results-title mt-5">Comparison</h1>
+
+<!--
       <div class="hover-text tooltipComparison">
         <i class="fa-solid fa-circle-info" id="info3"></i>
           <span class="tooltip-text" style="top: 0px; right: 10%;">We are comparing your impact per category (<%= @co2_weighted.round(0) %> kg) versus the average citizen of your country.>
           </span>
       </div>
+-->
+
     </div>
+
     <div class="my-3">
       <canvas id="myRadar" width="350" height="350" style="display: block; box-sizing: border-box; height: 254px; width: 254.5px;"></canvas>
     </div>
 
+    <div class="container mt-4">
+      <% if current_user %>
+        <%= link_to "Get Inspired!", ideas_path(refresh: true), class: "btn btn-gradient" %>
+      <% else %>
+        <%= link_to "Sign up for more!", new_user_registration_path(co:@co2_weighted), class: "btn btn-gradient" %>
+      <% end %>
+    </div>
 
-    <div class="container" id="buttonhome">
+  </div>
 
-        <% if current_user %>
-          <%= link_to "Get Inspired!", ideas_path(refresh: true), class: "btn btn-gradient" %>
-        <% else %>
-          <%= link_to "Sign up for more!", new_user_registration_path(co:@co2_weighted), class: "btn btn-gradient" %>
-        <% end %>
+</div>
 
 <!--
       <div class="button-container">
@@ -76,6 +99,3 @@
         <% end %>
       </div>
 -->
-    </div>
-  </div>
-</div>
