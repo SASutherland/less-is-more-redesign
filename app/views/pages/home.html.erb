@@ -25,7 +25,11 @@
   <div class="home-card-product">
     <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662287364/LessIsMore_ai/results_elshdv.jpg" />
     <div class="card-product-infos">
-      <h2>See your Results </h2>
+      <% if user_signed_in? %>
+        <h2><%= link_to "See Your Results", results_path, style: "color: #0B6F53;" %></h2>
+      <% else %>
+        <h2><%= link_to "See Your Results", survey_path(refresh: true), style: "color: #0B6F53;" %></h2>
+      <% end %>
       <p>Learn about your current carbon footprint</p>
     </div>
   </div>
@@ -33,7 +37,11 @@
   <div class="home-card-product">
     <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294546/LessIsMore_ai/ideas_pxf0wm.png" />
     <div class="card-product-infos">
-      <h2>Get Inspired</h2>
+      <% if user_signed_in? %>
+        <h2><%= link_to "Get Inspired", ideas_path(refresh: true), style: "color: #0B6F53;" %></h2>
+      <% else %>
+        <h2><%= link_to "Get Inspired", survey_path(refresh: true), style: "color: #0B6F53;" %></h2>
+      <% end %>
       <p>Explore actions you can take to reduce your Co2</p>
     </div>
   </div>
@@ -41,9 +49,12 @@
   <div class="home-card-product">
     <img src="https://res.cloudinary.com/carole-g/image/upload/t_Thumbnail/v1662294643/LessIsMore_ai/community_rzsnzt.png" />
     <div class="card-product-infos">
-      <h2>Join with Friends</h2>
+      <% if user_signed_in? %>
+        <h2><%= link_to "Join with Friends", search_path, style: "color: #0B6F53;" %></h2>
+      <% else %>
+        <h2><%= link_to "Join with Friends", survey_path(refresh: true), style: "color: #0B6F53;" %></h2>
+      <% end %>
       <p>Build a global community and share your ideas together</p>
-
     </div>
   </div>
 
