@@ -1,23 +1,22 @@
-// h2{
-//   margin-left: 1rem;
-//   font-weight: bold;
-//   font-size: 45px;
-// }
-
-h4{
-  margin-left: 1rem;
-}
-.form-label{
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-.logtext{
+.login-body {
+  background-color: #0B6F53;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: -50px;
 }
-.logcard{
+
+.login-title {
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: -15px;
+}
+
+.form-label {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.login-card {
   border-radius: 30px;
   margin: 0 auto;
   box-shadow: 2px 6px 6px #6f6f6f;
@@ -28,24 +27,28 @@ h4{
   height: 100%;
   margin-left: 1.3rem;
   .form-control{
+    border-radius: 5px;
     height: 47px;
     width: 90%;
     margin-left: 15px !important;
-    border-radius: 8px;
+    margin-bottom: 20px;
   }
 }
-.form-actions .button{
+
+.form-actions .button {
   width: 50%;
   margin-left: 2rem;
   margin-bottom: 2.5rem;
   margin-top: 1rem;
 }
-.btncontainer{
+
+.btncontainer {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin-left: 16px;
 }
-.remember-button{
+
+.remember-button {
   margin-left: 16px;
 }
