@@ -9,52 +9,60 @@
 //   height: 210vh !important;
 // }
 
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer;
-  border: none !important;
-  background-color: white;
-}
+// button:not(:disabled),
+// [type="button"]:not(:disabled),
+// [type="reset"]:not(:disabled),
+// [type="submit"]:not(:disabled) {
+//   cursor: pointer;
+//   border: none !important;
+//   background-color: white;
+// }
 
-.ideas-container {
+.ideas-body {
+  background-color: #00B865;
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
   // height: 253vh;
   // margin-top: -70px;
 }
 
 .ideas-card {
   background-color: white;
+  border-radius: 30px;
+  box-shadow: 2px 6px 6px #6f6f6f;
+  margin: 1rem;
+  padding: 1rem;
   width: 90%;
-  border-radius: 12px;
-  box-shadow: 10px 20px 15px rgb(111, 111, 111);
-  border-radius:  20px;
-  padding: 0px 25px 0px 25px;
-  flex-direction: row;
-  padding-top: 20px;
-  padding-bottom: 30px;
-  margin-bottom: 26px;
-  height: 1328px;
+  height: 100%;
+  margin-left: 1.3rem;
+  // background-color: white;
+  // width: 90%;
+  // border-radius: 12px;
+  // box-shadow: 10px 20px 15px rgb(111, 111, 111);
+  // border-radius:  20px;
+  // padding: 0px 25px 0px 25px;
+  // flex-direction: row;
+  // padding-top: 20px;
+  // padding-bottom: 30px;
+  // margin-bottom: 26px;
+  // height: 1328px;
 }
 
-.ideas-card h2 {
-  font-size: 36px !important;
-  margin-left: 0rem;
+// .ideas-card h2 {
+//   font-size: 36px !important;
+//   margin-left: 0rem;
+// }
 
+.ideas-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
 }
 
 .ideas-card p {
   font-size: 17px;
   text-align: center;
-}
-
-.ideas-card-title {
-  display: flex;
-  justify-content: center;
 }
 
 .mapboxgl-popup {
@@ -74,7 +82,7 @@ button:not(:disabled),
 }
 
 .swipe-instructions p {
-  font-size: 18px;
+  font-size: 17px;
   margin-left: 0rem;
   margin-bottom: 0.7rem;
   margin-top: 1rem;

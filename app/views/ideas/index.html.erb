@@ -1,13 +1,9 @@
-  <div class="ideas-container">
+  <div class="ideas-body">
 
-    <div class="ideas-card">
+    <div class="ideas-card row">
 
-      <div class="ideas-card-title">
-        <h2 class="pt-2">Get Inspired</h2>
-      </div>
-      <div class="ideas-card-title">
-        <p>Search for ideas anywhere in the world</p>
-      </div>
+      <h2 class="ideas-title">Get Inspired</h2>
+      <p>Search for ideas anywhere in the world</p>
 
       <div class="d-none" id="marker-get"><%= @markers %></div>
       <div id="map" data-map-api-key-value="<%= ENV['MAPBOX_API_KEY'] %>" data-markers="<%= @markers.to_json %>" style="width: 100%; height: 390px;"></div>
@@ -92,10 +88,7 @@
         }
       </script>
 
-
-
-      <h2 class="pt-5 tinder--title" style="margin-bottom: -10px;">Ideas for You</h2>
-
+      <h2 class="ideas-title mt-5">Ideas for You</h2>
 
       <div class="swipe-instructions">
         <p >Swipe ideas to the <strong>right</strong> to add them to your list of targets</p>
