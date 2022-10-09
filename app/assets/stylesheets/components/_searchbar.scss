@@ -1,27 +1,32 @@
 .ideas-form {
-  .search-btn {
-    // display: flex;
-    width: 90px;
-    height: 50px;
-    font-size: 16px;
-    font-weight: 600;
-    color: #313133;
-    background-color: #6D9DC5 !important;
-    // background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 2px 6px 6px #6f6f6f;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-  }
   margin: 2px;
   padding: 2px;
 }
 
+.search-btn {
+  width: 90px;
+  height: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #313133;
+  background-color: #00B865;
+  border: none;
+  border-radius: 40px;
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+}
+
+.search-btn:hover {
+  color: white;
+  background: #00cc70;
+  border: 1px solid #00cc70;
+}
+
 .search-control {
   width: 70%;
-    border-radius: 8px;
-    border: 1px solid lightgrey;
-    padding: 5px 10px;
+  border-radius: 8px;
+  border: 1px solid lightgrey;
+  padding: 5px 10px;
+  margin-right: 10px;
 }

@@ -2,12 +2,14 @@
   overflow: hidden;
   height: 120px;
   background: white;
-  box-shadow: 2px 6px 6px #6f6f6f;
+  box-shadow: 1px 3px 5px #0b6f53;
+  // box-shadow: 2px 6px 6px #6f6f6f;
   display: flex;
   align-items: center;
   border-radius: 8px;
   margin: 3px;
   margin-bottom: 10px;
+  text-align: left;
 }
 
 .card-idea img {
@@ -18,15 +20,16 @@
 }
 
 .card-idea h2 {
+  color: #0B6F53;
   font-size: 16px;
   font-weight: bold;
   margin: 0;
 }
 
 .card-idea p {
+  color: darkgrey;
   font-size: 12px;
   line-height: 1.4;
-  opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
 }
