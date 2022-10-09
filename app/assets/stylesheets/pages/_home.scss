@@ -291,39 +291,39 @@ margin-left: 8.5rem;
   background-color: black;
 }
 
-.mask {
-  position: absolute;
-  color:  rgb(66, 64, 64);
-  text-align: center;
-  width: 101%;
-  font-weight: bold;
-  font-size: 6vw;
-  margin-top: 7vw;
-  overflow: hidden;
-}
+// .mask {
+//   position: absolute;
+//   color:  rgb(66, 64, 64);
+//   text-align: center;
+//   width: 101%;
+//   font-weight: bold;
+//   font-size: 6vw;
+//   margin-top: 7vw;
+//   overflow: hidden;
+// }
 
 
-@keyframes anim1 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
+// @keyframes anim1 {
+//   from {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+//   to {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+// }
 
-@keyframes anim2 {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
+// @keyframes anim2 {
+//   from {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+//   to {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+// }
 
 // .picto{
 //   text-align: center;
