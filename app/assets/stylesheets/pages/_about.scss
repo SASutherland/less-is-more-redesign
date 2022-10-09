@@ -1,26 +1,43 @@
-.about_container{
-  margin-left: 1rem;
-  height: 100%;
-  padding-bottom: 20px;
-  text-align: center;
+.about-body {
+  background-color: #0B6F53;
+  display: flex;
+  justify-content: center;
+  // margin-left: 1rem;
+  // height: 100%;
+  // padding-bottom: 20px;
+  // text-align: center;
 }
 
-.title-about{
-margin-top: 20vw;
-  font-size:11vw;
+.about-card {
+  background: white;
+  border-radius: 30px;
+  box-shadow: 0px 3px 6px #6f6f6f;
+  margin: 10px 0px 10px 0px;
+  width: 95%;
+}
+
+.about-title {
+  font-size: 2rem;
   font-weight: bold;
+  margin-top: 1rem;
+  text-align: center;
+  // margin-top: 20vw;
+//   font-size:11vw;
+//   font-weight: bold;
 }
-.about_link{
-  margin-top: 2.5rem;
-  h3{
-    margin-bottom: 0;
-  }
 
-.titleproject{
-    font-size: 30px;
-    color: #1F487E;
-  }
-}
+// .about_link{
+//   margin-top: 2.5rem;
+
+//   h3{
+//     margin-bottom: 0;
+//   }
+
+// .titleproject{
+//     font-size: 30px;
+//     color: #1F487E;
+//   }
+// }
 
 .donate_btn{
   width: 135px;

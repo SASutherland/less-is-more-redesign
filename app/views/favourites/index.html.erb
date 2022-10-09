@@ -1,7 +1,7 @@
-<div class="container-target">
-  <div class="backcard">
+<div class="favourites-body">
+  <div class="favourites-card">
     <h1>My Targets</h1>
-    <div class="target-headers mb-3">
+    <div class="favourites-title mb-3">
         <h4>My Footprint: <strong><span style="color: #1F487E;"><%= @co2_weighted_user.round(0) %></span></strong> kg</h4>
         <h4>My Actions: -<strong><span style="color: #ca054d;"><%= @co2_weighted_user.round(0) - @new_results.round(0) %></span></strong> kg</h4>
         <h4>My Target: <strong><span style="color: #0B6F53;"><%= @new_results.round(0) %></span></strong> kg</h4>
