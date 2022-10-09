@@ -31,13 +31,14 @@
 
 .btn-gradient {
   color: white;
+  background: #00B865;
   width: 100%;
   padding: 12px 0px;
   border-radius: 25px;
-  // font-weight: bold;
   font-size: 24px;
   margin-top: 22px;
-  background: #00B865;
+  border: 1px solid #00B865;
+  // font-weight: bold;
   // border: 1px solid white;
   // background: linear-gradient(#7cc0f3, #3070C5);
   // transition: background 0.3s ease;
@@ -46,33 +47,17 @@
 
 .btn-gradient:hover {
   color: white;
+  background: #00cc70;
+  border: 1px solid #00cc70;
   // font-weight: bold;
-  background: #00B865;
-  border: 1px solid white;
   // background: linear-gradient(#8dcbfd, #3a88ee);
-  // border: 1px solid #3a88ee;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// .btn-gradient:focus {
+//   color: white;
+//   background: #00B865;
+//   transform: translateY(2px);
+// }
 
 .button-old {
   display: inline;
@@ -154,40 +139,40 @@ button::after {
   margin-bottom: 20px;
 }
 
-.mask {
-  position: absolute;
-  color:  rgb(66, 64, 64);
-  text-align: center;
-  width: 101%;
-  font-weight: lighter;
-  font-size: 6vw;
-  margin-top: 7vw;
-  overflow: hidden;
-  text-decoration: none;
-}
+// .mask {
+//   position: absolute;
+//   color:  rgb(66, 64, 64);
+//   text-align: center;
+//   width: 101%;
+//   font-weight: lighter;
+//   font-size: 6vw;
+//   margin-top: 7vw;
+//   overflow: hidden;
+//   text-decoration: none;
+// }
 
 
-@keyframes anim1 {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-}
+// @keyframes anim1 {
+//   from {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+//   to {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+// }
 
-@keyframes anim2 {
-  from {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-  }
-  to {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-}
+// @keyframes anim2 {
+//   from {
+//     -webkit-mask-position: 0 0;
+//     mask-position: 0 0;
+//   }
+//   to {
+//     -webkit-mask-position: 100% 0;
+//     mask-position: 100% 0;
+//   }
+// }
 .pay_btn{
   text-decoration: none;
   color: black;
