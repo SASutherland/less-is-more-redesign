@@ -3,8 +3,8 @@ const pierreCart = () => {
   var result = document.querySelector(".new_result");
   if(pi) {
   const labels = [
-    'My Footprint',
-    'My Target',
+    'Footprint',
+    'New Target',
     'Goal for 2030',
   ];
 

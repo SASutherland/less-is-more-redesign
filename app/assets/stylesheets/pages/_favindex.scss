@@ -10,24 +10,30 @@
   box-shadow: 0px 3px 6px #6f6f6f;
   margin: 10px 0px 10px 0px;
   width: 95%;
-  // box-shadow: 10px 10px 5px #ccc;
-  // border-radius: 30px;
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // background-color: white;
-  // width: 90;
-  // font-weight: bold;
 }
 
 .favourites-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
-   // text-align: left;
-  // position: relative;
-  // left: -10%;
+}
+
+.favourites-categories {
+  color: grey;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.favourites-numbers {
+  font-size: 30px;
+}
+
+.target-chart {
+  height: 250px;
+  border-radius: 8px;
+  width: 90%;
+  margin-bottom: 2rem;
 }
 
 .backcard h1{
@@ -52,12 +58,7 @@
   margin-bottom: 2rem;
   font-weight: 700;
 }
-.targetchart{
-  height: 30%;
-  border-radius: 8px;
-  width: 90%;
-  margin-bottom: 2rem;
-}
+
 .actionbtncont{
   margin-left: 8rem;
   display: flex;
@@ -147,12 +148,6 @@
  margin-bottom: 1.5rem;
 }
 
-.targetchart{
-  height: 30%;
-  border-radius: 8px;
-  width: 90%;
-  margin-bottom: 2rem;
-}
 
 .actionbtncont{
   margin-left: 8rem;

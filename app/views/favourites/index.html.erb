@@ -1,10 +1,24 @@
 <div class="favourites-body">
   <div class="favourites-card">
-    <h1>My Targets</h1>
-    <div class="favourites-title mb-3">
-        <h4>My Footprint: <strong><span style="color: #1F487E;"><%= @co2_weighted_user.round(0) %></span></strong> kg</h4>
-        <h4>My Actions: -<strong><span style="color: #ca054d;"><%= @co2_weighted_user.round(0) - @new_results.round(0) %></span></strong> kg</h4>
-        <h4>My Target: <strong><span style="color: #0B6F53;"><%= @new_results.round(0) %></span></strong> kg</h4>
+    <h1 class="favourites-title mb-4">My Targets</h1>
+
+    <div class="container">
+
+      <div class="d-flex justify-content-around">
+        <div class="column">
+          <h3 class="favourites-categories">Footprint</h3>
+          <strong><span class="favourites-numbers" style="color: #1F487E;"><%= @co2_weighted_user.round(0) %></span></strong>
+        </div>
+        <div class="column">
+          <h3 class="favourites-categories">Reduction</h3>
+          <strong><span class="favourites-numbers" style="color: #ca054d;">- <%= @co2_weighted_user.round(0) - @new_results.round(0) %></span></strong>
+        </div>
+        <div class="column">
+          <h3 class="favourites-categories">New Target</h3>
+          <strong><span class="favourites-numbers" style="color: #0B6F53;"><%= @new_results.round(0) %></span></strong>
+        </div>
+      </div>
+
     </div>
 
 <!--
@@ -16,8 +30,12 @@
     </div>
 -->
 
-    <div class="targetchart">
-      <canvas id="pChart"></canvas>
+    <div class="d-flex justify-content-center">
+
+      <div class="target-chart mt-4 mx-3">
+        <canvas id="pChart"></canvas>
+      </div>
+
     </div>
 
     <div class="actionbtncont">
