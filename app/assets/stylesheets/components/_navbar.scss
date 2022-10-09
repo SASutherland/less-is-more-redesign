@@ -11,10 +11,6 @@
   width: 40px;
 }
 
-// .navbar h1{
-//   font-family: 'Rubik Microbe', cursive;
-//   margin-top: -3.5rem;}
-
 .avatarimg {
   width: 34px;
   height: 34px;
@@ -29,12 +25,13 @@
   border-radius: 8px;
   padding: 1rem;
   position: absolute;
-  right: 0px;
-  top: 40px;
+  right: -4px;
+  top: 33px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   width: 10rem;
   z-index: 100;
+  box-shadow: 1px 0px 3px #0b6f53;
 }
 
 .dropdown-item {
@@ -42,14 +39,6 @@
   font-size: 1rem;
   padding: 8px;
 }
-
-// .dropdown-item-last {
-//   margin-bottom: 10px;
-//   z-index: 100;
-//   font-size: 5vw;
-//   padding-top: 3vh ;
-//   text-align: center;
-// }
 
 .dropimg {
   position: relative;

@@ -1,29 +1,10 @@
 // Import page-specific CSS files here.
 @import "swiper";
 
-// .fullcard-container{
-//   height: 260vh;
-// }
-
-// .body {
-//   height: 210vh !important;
-// }
-
-// button:not(:disabled),
-// [type="button"]:not(:disabled),
-// [type="reset"]:not(:disabled),
-// [type="submit"]:not(:disabled) {
-//   cursor: pointer;
-//   border: none !important;
-//   background-color: white;
-// }
-
 .ideas-body {
   background-color: #0B6F53;
   display: flex;
   justify-content: center;
-  // height: 253vh;
-  // margin-top: -70px;
 }
 
 .ideas-card {
@@ -32,28 +13,12 @@
   box-shadow: 0px 3px 6px #6f6f6f;
   margin: 10px 0px 10px 0px;
   width: 95%;
-  // background-color: white;
-  // width: 90%;
-  // border-radius: 12px;
-  // box-shadow: 10px 20px 15px rgb(111, 111, 111);
-  // border-radius:  20px;
-  // padding: 0px 25px 0px 25px;
-  // flex-direction: row;
-  // padding-top: 20px;
-  // padding-bottom: 30px;
-  // margin-bottom: 26px;
-  // height: 1328px;
 }
-
-// .ideas-card h2 {
-//   font-size: 36px !important;
-//   margin-left: 0rem;
-// }
 
 .ideas-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-top: 1rem;
+  margin-top: 2rem;
   text-align: center;
 }
 
