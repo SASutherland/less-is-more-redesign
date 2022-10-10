@@ -52,7 +52,7 @@ document.addEventListener('turbo:load', () => {
       labels: labels_pie,
       datasets: [{
         label: 'My First dataset',
-        backgroundColor: ['#FF839D', '#5CAB7D', '#349DE4', '#FFD77C'] ,
+        backgroundColor: ['#3fa7d6', '#ee6352', '#9470d7', '#fac05e'] ,
 
 
         data: [transportUser.dataset.value,
@@ -80,7 +80,6 @@ document.addEventListener('turbo:load', () => {
       'Food',
       'House',
       'Leisure'
-
   ];
 
     const transportCountry = document.querySelector(".transportcountry")
@@ -109,9 +108,9 @@ document.addEventListener('turbo:load', () => {
         leisureUser.dataset.value],
 
       fill: true,
-      backgroundColor: '#93E5AB',
-      borderColor: '#93E5AB',
-      pointBackgroundColor: '#93E5AB',
+      backgroundColor: '#1FFF9A',
+      borderColor: '#00cc70',
+      pointBackgroundColor: '#1FFF9A',
       pointBorderColor: '#fff',
       pointHoverBackgroundColor: '#fff',
       pointHoverBorderColor: 'rgb(255, 99, 132)'
