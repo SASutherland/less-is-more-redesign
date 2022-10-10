@@ -1,12 +1,13 @@
-<div class="results-container"
+<div class="chatroom-body"
   data-controller="chatroom-subscription"
   data-chatroom-subscription-chatroom-id-value="<%= @chatroom.id %>"
   data-chatroom-subscription-current-user-id-value="<%= current_user.id %>"
   >
-  <div class="results-card x-center">
-    <div>
-      <h1><strong><%= @chatroom.name %></strong></h1>
-    </div>
+
+  <div class="chatroom-card">
+
+    <h1 class="chatroom-title"><%= @chatroom.name %></h1>
+
     <div class="messages" data-chatroom-subscription-target="messages">
       <% @chatroom.messages.each do |message| %>
         <div class="message-row d-flex <%= message.sender?(current_user) ? 'justify-content-end' : 'justify-content-start'%>">
@@ -16,13 +17,19 @@
         </div>
       <% end %>
     </div>
+
+    <div class="new-message-container d-flex justify-content-center mt-3">
       <%= render "messages/messagesform", message: @message %>
+    </div>
+
+    <div class="container mb-3">
+      <%= link_to "Back to Community", search_path, class: "btn btn-gradient" %>
+    </div>
+
   </div>
+
 </div>
 
-<div class="container">
-  <%= link_to "Back to Community", search_path, class: "btn btn-gradient" %>
-</div>
 
 <!--
 <div class="container">
