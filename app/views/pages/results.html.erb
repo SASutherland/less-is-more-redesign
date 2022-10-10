@@ -27,17 +27,17 @@
           </div>
         </div>
 
+        <div class="tooltip-1">
+          <%= image_tag "info-symbol.PNG", class: "info-symbol" %>
+          <span class="tooltip-text info-position">Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>, which is far too high. We need to reach 2000 kg per person to ensure a liveable world for future generations.</span>
+        </div>
+
       </div>
 
-<!--
-            <div class="hover-text">
-              <i class="fa-solid fa-circle-info info"></i>
-              <span class="tooltip-text left">Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>, which is far too high. We need to reach 2000 kg (2 tonnes) per person to ensure a liveable world for future generations.</span>
-            </div>
--->
+
 
       <div class="d-flex justify-content-center">
-        <h1 class="results-title">Impact per category</h1>
+        <h1 class="results-title px-2">Impact per category</h1>
 
 <!--
             <div class="hover-text">
@@ -90,5 +90,6 @@
     </div>
 
   </div>
+
 
 </div>

@@ -18,6 +18,7 @@
   font-weight: bold;
   margin-top: 1rem;
   text-align: center;
+  margin-bottom: -10px;
 }
 
 .KPI-titles {
@@ -43,6 +44,49 @@
   font-weight: bold;
 }
 
+.info-symbol {
+  height: 25px;
+  width: 25px;
+}
+
+.tooltip-1 {
+  position: absolute;
+  text-align: center;
+  bottom: 80%;
+  right: 3%;
+}
+
+.tooltip-1:hover .tooltip-text {
+  visibility: visible;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  position: absolute;
+  z-index: 1;
+  width: 280px;
+  color: white;
+  font-size: 14px;
+  background-color : rgba($color: #000000, $alpha: 0.8);
+  border-radius: 10px;
+  padding: 10px 15px 10px 15px;
+  line-height: 30px;
+}
+
+.info-position {
+  right: 120%;
+}
+
+// .fa-regular {
+//   // background: #1F487E;
+//   border-radius: 50%;
+//   // color: white;
+//   padding: 5px;
+//   height: 24px;
+//   width: 25px;
+// }
+
+
 // .split {
 //   font-weight: bold;
 //   margin-top: 3vw;
@@ -59,44 +103,19 @@
   background: white;
 }
 
-.info {
-  font-size: 1rem;
-  background: #0f4fb7;
-  border-radius: 50%;
-  color: white;
-  padding: 4px;
-  text-align: center;
-  margin-top: 83px;
-}
+// .info {
+//   font-size: 1rem;
+//   background: #0f4fb7;
+//   border-radius: 50%;
+//   color: white;
+//   padding: 4px;
+//   text-align: center;
+//   margin-top: 83px;
+// }
 
-.tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 80vw;
-  color: white;
-  font-size: 18px;
-  // background-color: #192733;
-  background-color : rgba($color: #000000, $alpha: 0.8);
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-  line-height: 30px;
-}
 
-.hover-text:hover .tooltip-text {
-  visibility: visible;
-}
 
-.left {
-  top: -8px;
-  right: 120%;
-}
 
-.hover-text {
-  position: relative;
-  margin: -85px;
-  text-align: center;
-}
 
 // .containerpie {
 //   justify-content: space-around;
@@ -161,24 +180,24 @@
 //   margin-top: -2vw;
 // }
 
-#buttonsurvey {
-  margin-top: -20vw;
-}
+// #buttonsurvey {
+//   margin-top: -20vw;
+// }
 
-.button-container {
-  position: relative;
-  width: 70vw;
-  height: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 13vh;
-  margin-bottom: 10vh;
-  overflow: hidden;
-  transition: 0.5s;
-  background: #a2d696, ;
-  border-radius: 10vw;
-  font-size: 6vw;
-}
+// .button-container {
+//   position: relative;
+//   width: 70vw;
+//   height: 10vh;
+//   margin-left: auto;
+//   margin-right: auto;
+//   margin-top: 13vh;
+//   margin-bottom: 10vh;
+//   overflow: hidden;
+//   transition: 0.5s;
+//   background: #a2d696, ;
+//   border-radius: 10vw;
+//   font-size: 6vw;
+// }
 
 // .button-container button {
 //   width: 101%;
