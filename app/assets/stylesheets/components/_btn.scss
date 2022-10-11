@@ -16,18 +16,18 @@
   opacity: 1;
 }
 
-.btn-flat {
-  color: white;
-  padding: 8px 24px;
-  border-radius: 4px;
-  background: #670BFF;
-  transition: background 0.3s ease;
-}
+// .btn-flat {
+//   color: white;
+//   padding: 8px 24px;
+//   border-radius: 4px;
+//   background: #670BFF;
+//   transition: background 0.3s ease;
+// }
 
-.btn-flat:hover {
-  background: #4D04C4;
-  color: white;
-}
+// .btn-flat:hover {
+//   background: #4D04C4;
+//   color: white;
+// }
 
 .btn-gradient {
   color: white;
@@ -49,44 +49,6 @@
 .login-btn {
   width: 92%;
 }
-
-// .button-old {
-//   display: inline;
-//   min-width: 80%;
-//   min-height: 60px;
-//   font-size: 19px;
-//   font-weight: 700;
-//   color: white;
-//   background: #4FD1C5;
-//   background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-//   border: none;
-//   border-radius: 1000px;
-//   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-//   padding: 10px 50px 10px 50px;
-//   text-decoration: none;
-//   text-align: center;
-//   }
-
-// .button-old:hover, .button-old:focus {
-//   color: white;
-//   transform: translateY(-6px);
-// }
-
-// button::after {
-//   content: '';
-//   width: 30px; height: 30px;
-//   border-radius: 100%;
-//   position: absolute;
-//   z-index: -1;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
-
-// .button {
-//   text-decoration: none;
-//   color: white;
-// }
 
 .form-button-container {
   margin-top: 60px;
