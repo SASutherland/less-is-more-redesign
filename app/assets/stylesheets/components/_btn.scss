@@ -38,162 +38,84 @@
   font-size: 24px;
   margin-top: 22px;
   border: 1px solid #00B865;
-  // font-weight: bold;
-  // border: 1px solid white;
-  // background: linear-gradient(#7cc0f3, #3070C5);
-  // transition: background 0.3s ease;
-  // border: 1px solid #1F487E
 }
 
 .btn-gradient:hover {
   color: white;
   background: #00cc70;
   border: 1px solid #00cc70;
-  // font-weight: bold;
-  // background: linear-gradient(#8dcbfd, #3a88ee);
 }
 
 .login-btn {
   width: 92%;
 }
 
-.button-old {
-  display: inline;
-  min-width: 80%;
-  min-height: 60px;
-  font-size: 19px;
-  font-weight: 700;
-  color: white;
-  background: #4FD1C5;
-  background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-  border: none;
-  border-radius: 1000px;
-  box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-  padding: 10px 50px 10px 50px;
-  text-decoration: none;
-  text-align: center;
-  }
+// .button-old {
+//   display: inline;
+//   min-width: 80%;
+//   min-height: 60px;
+//   font-size: 19px;
+//   font-weight: 700;
+//   color: white;
+//   background: #4FD1C5;
+//   background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
+//   border: none;
+//   border-radius: 1000px;
+//   box-shadow: 12px 12px 24px rgba(79,209,197,.64);
+//   padding: 10px 50px 10px 50px;
+//   text-decoration: none;
+//   text-align: center;
+//   }
 
-.button-old:hover, .button-old:focus {
-  color: white;
-  transform: translateY(-6px);
-}
+// .button-old:hover, .button-old:focus {
+//   color: white;
+//   transform: translateY(-6px);
+// }
 
-button::after {
-  content: '';
-  width: 30px; height: 30px;
-  border-radius: 100%;
-  position: absolute;
-  z-index: -1;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+// button::after {
+//   content: '';
+//   width: 30px; height: 30px;
+//   border-radius: 100%;
+//   position: absolute;
+//   z-index: -1;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
 
-.button{
-  text-decoration: none;
-  color: white;
-}
-
-.button-container {
-  position: relative;
-  width: 70vw;
-  height: 10vh;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
-  overflow: hidden;
-  transition: 0.5s;
-  background: #a2d696, ;
-  border-radius: 10vw;
-  font-size: 6vw;
-}
-
-.button-container button {
-  width: 101%;
-  height: 100%;
-  font-size: 6vw;
-  background: #345f61;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
-  -webkit-mask-size: 2300% 100%;
-  mask-size: 2300% 100%;
-  border: none;
-  color: white;
-  cursor: pointer;
-  animation: anim2 0.7s steps(22) forwards;
-  background-color: black;
-}
-
-.button-container button:hover {
-  animation: anim1 0.7s steps(22) forwards;
-  color: rgb(195, 191, 191);
-  background-color: black;
-}
+// .button {
+//   text-decoration: none;
+//   color: white;
+// }
 
 .form-button-container {
   margin-top: 60px;
   margin-bottom: 20px;
 }
 
-// .mask {
-//   position: absolute;
-//   color:  rgb(66, 64, 64);
-//   text-align: center;
-//   width: 101%;
-//   font-weight: lighter;
-//   font-size: 6vw;
-//   margin-top: 7vw;
-//   overflow: hidden;
+// .pay_btn{
 //   text-decoration: none;
+//   color: black;
+//   background-color: #a2d696 !important;
+//   width: 10rem;
+//   height: 4.25rem;
+//   font-size: 7vw;
+//   border-radius: 20px;
+//   margin-left: 4.25rem;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 2rem;
 // }
-
-
-// @keyframes anim1 {
-//   from {
-//     -webkit-mask-position: 100% 0;
-//     mask-position: 100% 0;
-//   }
-//   to {
-//     -webkit-mask-position: 0 0;
-//     mask-position: 0 0;
-//   }
+// .card_pay{
+//   background-color: white;
+//   height: 42vh;
+//   width: 90vw;
+//   border-radius: 30px;
+//   margin: 0 auto;
+//   box-shadow: 2px 6px 6px #6f6f6f;
+//   line-height: 25vw;
+//   margin-bottom: 25vw;
+//   padding: 30px;
+//   margin-top: 3rem;
 // }
-
-// @keyframes anim2 {
-//   from {
-//     -webkit-mask-position: 0 0;
-//     mask-position: 0 0;
-//   }
-//   to {
-//     -webkit-mask-position: 100% 0;
-//     mask-position: 100% 0;
-//   }
-// }
-.pay_btn{
-  text-decoration: none;
-  color: black;
-  background-color: #a2d696 !important;
-  width: 10rem;
-  height: 4.25rem;
-  font-size: 7vw;
-  border-radius: 20px;
-  margin-left: 4.25rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-}
-.card_pay{
-  background-color: white;
-  height: 42vh;
-  width: 90vw;
-  border-radius: 30px;
-  margin: 0 auto;
-  box-shadow: 2px 6px 6px #6f6f6f;
-  line-height: 25vw;
-  margin-bottom: 25vw;
-  padding: 30px;
-  margin-top: 3rem;
-}

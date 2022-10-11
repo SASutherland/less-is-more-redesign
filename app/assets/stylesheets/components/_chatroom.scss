@@ -1,7 +1,3 @@
-// .results-container {
-//   height: 98vh;
-// }
-
 .chatroom-body {
   background-color: #0B6F53;
   display: flex;
@@ -28,21 +24,6 @@
   margin-bottom: -18px;
 }
 
-// .results-card{
-//   background-color: white;
-//   width: 90%;
-//   border-radius: 12px;
-//   box-shadow: 10px 20px 15px #6f6f6f;
-//   border-radius: 20px;
-//   padding: 15px;
-//   padding-bottom: 10px;
-// }
-
-// .x-center {
-//   margin: 0 auto;
-//   margin-top: 10px;
-// }
-
 .card-idea {
   overflow: hidden;
   height: 120px;
@@ -61,12 +42,6 @@ a {
 .card-idea:hover {
   transform: scale(1.03);
 }
-
-// .ideas-form {
-//   margin-left: 1rem;
-//   margin-right: 1rem;
-//   width: 90%;
-// }
 
 .card-product img {
   height: 50px;
