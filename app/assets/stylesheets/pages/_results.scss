@@ -57,25 +57,27 @@
 
 .tooltip-2 {
   position: absolute;
-  bottom: 80%;
+  bottom: -101%;
   right: 3%;
+  z-index: 2;
 }
 
 .tooltip-3 {
   position: absolute;
-  bottom: 80%;
+  bottom: 36%;
   right: 3%;
+  z-index: 2;
 }
 
 .tooltip-1:hover .tooltip-text {
   visibility: visible;
 }
 
-.tooltip-2:hover .tooltip-text2 {
+.tooltip-2:hover .tooltip-text {
   visibility: visible;
 }
 
-.tooltip-3:hover .tooltip-text2 {
+.tooltip-3:hover .tooltip-text {
   visibility: visible;
 }
 
