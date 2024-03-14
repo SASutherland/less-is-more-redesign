@@ -6,5 +6,7 @@ test:
 
 production:
   adapter: redis
-  url: <%= ENV.fetch("REDISCLOUD_URL") { "redis://localhost:6379/1" } %>
+  # This was the old way prior to installing Heroku Data for Redis
+  # url: <%= ENV.fetch("REDISCLOUD_URL") { "redis://localhost:6379/1" } %>
+  url: <%= ENV['REDIS_URL'] %>
   channel_prefix: less_is_more_production
