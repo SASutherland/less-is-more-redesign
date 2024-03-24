@@ -51,7 +51,7 @@ document.addEventListener('turbo:load', () => {
     const data = {
       labels: labels_pie,
       datasets: [{
-        label: 'My First dataset',
+        label: 'My Current Footprint',
         backgroundColor: ['#3fa7d6', '#ee6352', '#9470d7', '#fac05e'] ,
 
 

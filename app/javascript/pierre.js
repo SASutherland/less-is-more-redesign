@@ -4,8 +4,8 @@ const pierreCart = () => {
   if(pi) {
   const labels = [
     'Footprint',
-    'New Target',
-    'Goal for 2030',
+    'Post-Action',
+    'Goal',
   ];
 
   const data = {

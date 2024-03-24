@@ -5,7 +5,7 @@ const data = {
     'Red'
   ],
   datasets: [{
-    label: 'My First Dataset',
+    label: 'My Current Footprint',
     data: [300, 50, 100],
     backgroundColor: [
       'rgb(255, 99, 132)',
